@@ -212,8 +212,8 @@ nav a:hover{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   background-color: #f2f2f2;
   transition: 0.4s;
-  width: 450px;
-  height: 350px;
+  width: 400px;
+  height: 300px;
   margin: 20px;
   padding: 0px;
   border-radius: 15px;
@@ -234,7 +234,7 @@ nav a:hover{
 .yt_cards iframe{
   border-radius: 12px;
   width: 100%; /*so that img fit in it's parent box */
-  height: 72%;
+  height: 68%;
 }
 
 /*.yt_card_left{
