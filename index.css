@@ -120,30 +120,36 @@ nav a:hover{
 .project_items{
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
-  padding: 40px 10px;
+  padding: 40px 60px;
   overflow: auto;
 }
 
 .title{
-  /* float: left; */
+  float: left;
+  /* width: 50%; */
   font-weight: bold;
   font-size: 40px;
-  padding: 0px 30px;
+  /* padding: 0px 20px; */
   color: #000;
   text-decoration: none;
 }
 
+/* .proj-img{
+  padding: 0 10px;
+  margin: 0 10px;
+} */
+
 .project_items img{
-  /* margin-left: auto;
-  float: right; */
-  height: 262px;
-  width: 450px;
-  /* height: 350px;
-  width: 600px; */
+  margin-left: auto;
+  float: right;
+  /* height: 262px;
+  width: 450px; */
+  /* margin: 0px 20px; */
+  height: 350px;
+  width: 600px;
   border-radius: 20px;
-  /* padding: 1px 2px; */
   transition: 0.4s;
   box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
 }
@@ -223,6 +229,7 @@ nav a:hover{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  /* padding: 20px; */
 }
 
 .card {
@@ -230,7 +237,7 @@ nav a:hover{
   background-color: #f2f2f2;
   transition: 0.4s;
   text-align: center;
-  margin: 20px;
+  margin: 30px;
   border-radius: 15px;
 }
 
