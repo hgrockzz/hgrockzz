@@ -123,6 +123,8 @@ nav a:hover{
   font-weight: bold;
   font-size: 40px;
   padding: 0px 30px;
+  color: #000;
+  text-decoration: none;
 }
 
 .project_items img{
@@ -131,8 +133,13 @@ nav a:hover{
   height: 350px;
   width: 600px;
   border-radius: 20px;
-  padding: 0px 5px;
+  /* padding: 1px 2px; */
+  transition: 0.4s;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.project_items img:hover{
+  box-shadow: 6px 10px 12px 0 rgba(0,0,0,0.2);
 }
 
 .youthoob{
@@ -179,7 +186,6 @@ nav a:hover{
 .youthoob .yt_title{
   float: right;
   height: 330;
-  width:
 }
 
 /*.yt_card_left{
