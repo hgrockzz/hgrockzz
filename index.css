@@ -120,12 +120,14 @@ nav a:hover{
 .project_items{
   display: flex;
   align-items: center;
-  padding: 40px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 40px 10px;
   overflow: auto;
 }
 
 .title{
-  float: left;
+  /* float: left; */
   font-weight: bold;
   font-size: 40px;
   padding: 0px 30px;
@@ -134,10 +136,12 @@ nav a:hover{
 }
 
 .project_items img{
-  margin-left: auto;
-  float: right;
-  height: 350px;
-  width: 600px;
+  /* margin-left: auto;
+  float: right; */
+  height: 262px;
+  width: 450px;
+  /* height: 350px;
+  width: 600px; */
   border-radius: 20px;
   /* padding: 1px 2px; */
   transition: 0.4s;
@@ -145,9 +149,6 @@ nav a:hover{
 }
 
 .youthoob{
-  /*display: flex;*/
-  /*align-items: center;*/
-
   padding: 60px 40px;
   overflow: auto;
 }
@@ -177,6 +178,8 @@ nav a:hover{
 
 .youthoob iframe{
   border-radius: 10px;
+  width: 450px; 
+  height: 246px; 
 }
 
 .youthoob p{
@@ -216,13 +219,18 @@ nav a:hover{
   font-size: 20px;
 }*/
 
+.card-flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   background-color: #f2f2f2;
   transition: 0.4s;
-  width: 45%;
-  align-items: center;
   text-align: center;
+  margin: 20px;
   border-radius: 15px;
 }
 
@@ -232,7 +240,6 @@ nav a:hover{
 
 .container {
   padding: 2px 16px;
-  line-height: 0.8;
 }
 
 .container>h4{
@@ -242,14 +249,6 @@ nav a:hover{
 
 .container>p{
   font-size: 17px;
-}
-
-.cardl{
-  float: left;
-}
-
-.cardr{
-  float: right;
 }
 
 .size1{
