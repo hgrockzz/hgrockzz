@@ -352,6 +352,7 @@ nav a:hover{
 }
 
 footer{
+  text-align: center;
   background-color: #ff4444;
   padding: 20px;
   padding-top: 0;
@@ -365,6 +366,7 @@ footer h3{
 
 .socials{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
   margin: 20px 0;
 }
