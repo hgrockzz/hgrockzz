@@ -47,14 +47,14 @@ body{
     height: 21px;
     width: 18px;
     float: left;
-    padding: 11px 10px;
+    padding: 15px 5px;
     transition: transform 200ms;
   }
   nav .my_name{
     float: left;
     font-weight: bold;
-    padding: 13px 10px;
-    font-size: 15px;
+    padding: 16px 5px;
+    font-size: 17px;
     color: inherit;
     transition: transform 200ms;
   }
@@ -63,8 +63,8 @@ body{
     text-decoration: none;
     font-weight: bold;
     color: inherit;
-    padding: 13px 10px;
-    font-size: 15px;
+    padding: 16px 7px;
+    font-size: 17px;
     transition: transform 200ms;
   }
   .alt-link{
