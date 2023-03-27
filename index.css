@@ -11,6 +11,80 @@ body{
   color: #eaeaea;
 }
 
+/* -- media queries -- */
+
+/* for pc|lapy screens */
+@media(min-width:586px){
+  nav img{
+    height: 26px;
+    width: 22px;
+    float: left;
+    padding: 13px 16px;
+    transition: transform 200ms;
+  }
+  nav .my_name{
+    float: left;
+    font-weight: bold;
+    padding: 15px 16px;
+    font-size: 20px;
+    color: inherit;
+    transition: transform 200ms;
+  }
+  nav a{
+    float: right;
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+    padding: 15px 16px;
+    font-size: 20px;
+    transition: transform 200ms;
+  }
+  .front_bio img{
+    float: right;
+    height: 300px;
+    width: 270px;
+    padding-top: 70px;
+  }
+}
+
+/* for smartphone screens */
+@media(max-width:586px){
+  nav img{
+    height: 21px;
+    width: 18px;
+    float: left;
+    padding: 15px 5px;
+    transition: transform 200ms;
+  }
+  nav .my_name{
+    float: left;
+    font-weight: bold;
+    padding: 16px 5px;
+    font-size: 17px;
+    color: inherit;
+    transition: transform 200ms;
+  }
+  nav a{
+    float: right;
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+    padding: 16px 7px;
+    font-size: 17px;
+    transition: transform 200ms;
+  }
+  .alt-link{
+    display: none;
+  }
+  .front_bio img{
+    float: right;
+    height: 300px;
+    width: 270px;
+    padding-top: 20px;
+  }
+}
+/* -- media queries end -- */
+
 nav{
   overflow: hidden;
   z-index: 2;
@@ -22,42 +96,15 @@ nav{
   user-select: none;
 }
 
-nav img{
-  height: 26px;
-  width: 22px;
-  float: left;
-  padding: 13px 16px;
-  transition: transform 200ms;
-}
-
 nav img:hover{
   filter: drop-shadow(3px 5px 5px #800);
   transform: scale(1.07);
-}
-
-nav .my_name{
-  float: left;
-  font-weight: bold;
-  padding: 15px 16px;
-  font-size: 20px;
-  color: inherit;
-  transition: transform 200ms;
 }
 
 nav .my_name:hover{
   color: #fff;
   text-shadow: 10px 5px 15px #800;
   transform: scale(1.07);
-}
-
-nav a{
-  float: right;
-  text-decoration: none;
-  font-weight: bold;
-  color: inherit;
-  padding: 15px 16px;
-  font-size: 20px;
-  transition: transform 200ms;
 }
 
 nav a:hover{
@@ -102,12 +149,12 @@ nav a:hover{
   background-image: linear-gradient(to right, rgba(255,200,200,0.3), rgba(255,0,0,0), rgba(255,0,0,0),rgba(255,200,200,0.3));
 }*/
 
-.front_bio img{
+/* .front_bio img{
   float: right;
   height: 300px;
   width: 270px;
   padding-top: 70px;
-}
+} */
 
 .front_projects{
   background-color: #eee;
@@ -120,41 +167,87 @@ nav a:hover{
   font-size: 50px;
 }
 
-.project_items{
-  display: flex;
-  align-items: center;
-  /* justify-content: space-between; */
-  flex-wrap: wrap;
-  padding: 40px 60px;
-  overflow: auto;
-}
-
-.title{
-  float: left;
-  /* width: 50%; */
-  font-weight: bold;
-  font-size: 40px;
-  /* padding: 0px 20px; */
-  color: #000;
-  text-decoration: none;
-}
-
 /* .proj-img{
   padding: 0 10px;
   margin: 0 10px;
 } */
 
-.project_items img{
-  margin-left: auto;
-  float: right;
-  /* height: 262px;
-  width: 450px; */
-  /* margin: 0px 20px; */
-  height: 350px;
-  width: 600px;
-  border-radius: 20px;
-  transition: 0.4s;
-  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+/* large screen */
+@media(min-width:586px){
+  .project_items{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    padding: 40px 60px;
+    overflow: auto;
+  }
+  .title{
+    float: left;
+    /* width: 50%; */
+    font-weight: bold;
+    font-size: 40px;
+    /* padding: 0px 20px; */
+    color: #000;
+    text-decoration: none;
+  }
+  .project_items img{
+    margin-left: auto;
+    float: right;
+    /* height: 262px;
+    width: 450px; */
+    /* margin: 0px 20px; */
+    height: 350px;
+    width: 600px;
+    border-radius: 20px;
+    transition: 0.4s;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+  }
+  .youthoob .ch_name{
+    font-weight: bold;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 35px;
+    padding: 10px;
+  }
+}
+
+/* small screen */
+@media(max-width:586px){
+  .project_items{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    overflow: auto;
+  }
+  .title{
+    float: left;
+    /* width: 50%; */
+    font-weight: bold;
+    font-size: 22px;
+    /* padding-left: 10px; */
+    color: #000;
+    text-decoration: none;
+  }
+  .project_items img{
+    margin: auto;
+    float: right;
+    /* height: 262px;
+    width: 450px; */
+    /* margin: 0px 20px; */
+    height: 200px;
+    width: 343px;
+    border-radius: 20px;
+    transition: 0.4s;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+  }
+  .youthoob .ch_name{
+    font-weight: bold;
+    font-family: 'Mochiy Pop One', sans-serif;
+    font-size: 27px;
+    padding: 8px;
+  }
 }
 
 .youthoob{
@@ -172,13 +265,6 @@ nav a:hover{
   height: 70px;
   width: 100px;
   padding-top: 10px;
-}
-
-.youthoob .ch_name{
-  font-weight: bold;
-  font-family: 'Mochiy Pop One', sans-serif;
-  font-size: 35px;
-  padding: 10px;
 }
 
 .youthoob .ch_desc{
@@ -397,9 +483,8 @@ footer h3{
 /* -- Education Page -- */
 .education{
   display: inline-block;
-  /* text-align: center; */
   font-family: arial,sans-serif;
-  padding: 200px 0 20px 20px;
+  padding: 100px 0 20px 20px;
   font-size: 60px;
   color: red;
   border-bottom: 5px solid red;
