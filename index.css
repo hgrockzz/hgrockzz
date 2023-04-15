@@ -460,15 +460,18 @@ footer h3{
   color: white;
   padding: 10px;
 }
+.bi{
+  transition: transform 200ms;
+}
 .bi:hover{
-  filter: drop-shadow(3px 5px 5px #800);
+  filter: drop-shadow(1px 1px 15px rgb(118, 19, 19));
+  transform: scale(1.07);
 }.bi-github:hover{
   color:#000;
 }.bi-linkedin:hover{
   color: #0073b1;
 }.bi-instagram:hover{
-  color: #c903b5;
-  filter: drop-shadow(3px 5px 5px rgb(252, 64, 195));
+  fill: url(#gradient);
 }.bi-envelope-at:hover{
   color: #000;
 }.bi-telegram:hover{
