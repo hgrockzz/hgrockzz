@@ -248,6 +248,9 @@ nav a:hover{
     font-size: 27px;
     padding: 8px;
   }
+  .render-img{
+    display: none;
+  }
 }
 
 .youthoob{
@@ -438,7 +441,9 @@ nav a:hover{
 }
 
 footer{
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #ff4444;
   padding: 20px;
   padding-top: 0;
@@ -480,6 +485,13 @@ footer h3{
   color: #00ace8;
 }
 
+.render-img{
+  margin-left: 30px;
+}
+footer img{
+  height: 150px;
+  width: 150px;
+}
 
 
 
