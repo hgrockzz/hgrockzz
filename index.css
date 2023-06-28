@@ -472,7 +472,7 @@ footer h3{
   transition: transform 200ms;
 }
 .bi:hover{
-  filter: drop-shadow(1px 1px 15px rgb(118, 19, 19));
+  filter: drop-shadow(1px 1px 15px rgb(196, 176, 0));
   transform: scale(1.07);
 }.bi-github:hover{
   color:#000;
