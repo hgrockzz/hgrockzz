@@ -16,3 +16,4 @@ Here are some ideas to get you started:
 -->
 
 [![hgrockzz's GitHub | Stats](https://stats.quine.sh/hgrockzz/github?theme=dark)](https://quine.sh)
+[![hgrockzz's GitHub | Languages Over Time](https://stats.quine.sh/hgrockzz/languages-over-time?theme=dark)](https://quine.sh)
