@@ -15,6 +15,7 @@ Here are some ideas to get you started:
 - ⚡ Fun fact: ...
 -->
 
-<!-- [![hgrockzz's GitHub | Stats](https://stats.quine.sh/hgrockzz/github?theme=dark)](https://quine.sh) -->
+[![GitHub Streak](https://streak-stats.demolab.com?user=hgrockzz&theme=github-dark&border_radius=100&date_format=M%20j%5B%2C%20Y%5D&card_width=850&fire=8808E1&border=8108D5)](https://git.io/streak-stats)
+
 [![hgrockzz's GitHub | Languages Over Time](https://stats.quine.sh/hgrockzz/languages-over-time?theme=dark)](https://quine.sh)
 
