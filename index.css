@@ -180,17 +180,14 @@ nav a:hover{
   .project_items{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     padding: 40px 60px;
     overflow: auto;
   }
   .title{
     float: left;
-    /* width: 50%; */
     font-weight: bold;
     font-size: 40px;
-    /* padding: 0px 20px; */
     color: #000;
     text-decoration: none;
   }
@@ -216,26 +213,20 @@ nav a:hover{
   .project_items{
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
     flex-wrap: wrap;
     padding: 30px 20px;
     overflow: auto;
   }
   .title{
     float: left;
-    /* width: 50%; */
     font-weight: bold;
     font-size: 22px;
-    /* padding-left: 10px; */
     color: #000;
     text-decoration: none;
   }
   .project_items img{
     margin: auto;
     float: right;
-    /* height: 262px;
-    width: 450px; */
-    /* margin: 0px 20px; */
     height: 200px;
     width: 343px;
     border-radius: 20px;
