@@ -6,6 +6,10 @@ body{
   font-family: sans-serif;
 }
 
+html, body{
+  scroll-behavior: smooth; /*to move Top of page */
+}
+
 ::selection{
   background-color: red;
   color: #eaeaea;
@@ -135,6 +139,24 @@ nav a:hover{
   text-shadow: 10px 5px 15px #800;
   transform: scale(1.07);
   /* text-decoration: underline; */
+}
+
+#topBtn {
+  display: none;
+  position: fixed; 
+  bottom: 20px;
+  right: 30px; 
+  z-index: 99; 
+  border: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50%; 
+}
+
+#topBtn:hover {
+  background-color: #555; 
 }
 
 .right{

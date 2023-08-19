@@ -31,3 +31,19 @@
             document.getElementById('greet').innerText = "Hi"
             break;
     }
+
+//move to top on scroll section
+let scrollTop = document.getElementById('topBtn');
+window.onscroll = function() { scrollFunc() }
+
+function scrollFunc() {
+    if(document.body.scrollTop > 1000 || document.documentElement.scrollTop > 1000)
+        scrollTop.style.display = 'block';
+    else
+        scrollTop.style.display = 'none';
+}
+
+function moveToTop(){
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}    
