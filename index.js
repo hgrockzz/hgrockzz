@@ -46,4 +46,23 @@ function scrollFunc() {
 function moveToTop(){
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-}    
+}
+
+// Responsive NavBar
+function expandMenu(){
+    document.getElementById('links').classList.remove('links');
+    document.getElementById('links').classList.add('links-mobile');
+    document.getElementById('logo').style.display = 'none';
+    document.getElementById('menu').style.display = 'none';
+    document.getElementById('navBack').classList.remove('navBack');
+    document.getElementById('navBack').classList.add('menu');
+}
+
+function collapseMenu(){
+    document.getElementById('navBack').classList.remove('menu');
+    document.getElementById('navBack').classList.add('navBack');
+    document.getElementById('menu').style.display = 'block';
+    document.getElementById('logo').style.display = 'flex';
+    document.getElementById('links').classList.remove('links-mobile');
+    document.getElementById('links').classList.add('links');
+}

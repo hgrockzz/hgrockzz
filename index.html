@@ -16,16 +16,27 @@
   <body>
     <header>
       <nav>
-        <div class="logo">
+        <div class="logo" id="logo">
           <img src="assets/IMG_20220518_172355.png" alt="logo">
           <a href="https://hgrockzz.netlify.app">Harshit Gupta</a>
         </div>
 
-        <div>
-          <a href="https://hgrockzz.netlify.app" class="alt-link"> Home </a>
-          <a href="#projects" class="alt-link"> Projects </a>
+        <div class="menu" id="menu" onclick="expandMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+            <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+          </svg>
+        </div>
+        <div class="navBack" id="navBack" onclick="collapseMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+          </svg>
+        </div>
+
+        <div class="links" id="links">
+          <a href="https://hgrockzz.netlify.app"> Home </a>
+          <a href="#projects"> Projects </a>
           <a href="Education.html"> Education </a>
-          <a href="#contact" class="alt-link"> Contact </a>
+          <a href="#contact"> Contact </a>
           <a href="https://drive.google.com/file/d/1Ytu14FnzVuZmJzLftA3er6pIb2LAkX51/view" target="_blank"> Download CV </a>
         </div>
       </nav>

@@ -20,7 +20,38 @@ nav .logo{
   align-items: center;
 }
 
+.menu{
+  display: none;
+}
+
+.links{
+  display: flex;
+  align-items: center;
+}
+.links-mobile{
+  margin: 50px 10px;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  gap: 50px;
+}
+.navBack{
+  display: none;
+}
+
 /* -- media queries -- */
+
+/* responsive nav for mobile/tab */
+@media(max-width:786px){
+  .menu{
+    display: block;
+    text-align: right;
+    margin: 10px;
+  }
+  .links{
+    display: none;
+  }
+}
 
 /* for pc|lapy screens */
 @media(min-width:586px){
@@ -73,9 +104,9 @@ nav .logo{
     font-size: 17px;
     transition: transform 200ms;
   }
-  .alt-link{
+  /* .alt-link{
     display: none;
-  }
+  } */
   .front_bio img{
     float: right;
     height: 300px;
@@ -108,7 +139,6 @@ nav{
   position: fixed;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   user-select: none;
 }
 
@@ -173,11 +203,6 @@ nav a:hover{
   text-align: center;
   font-size: 50px;
 }
-
-/* .proj-img{
-  padding: 0 10px;
-  margin: 0 10px;
-} */
 
 /* large screen */
 @media(min-width:586px){
@@ -269,19 +294,6 @@ nav a:hover{
   font-family: 'Mochiy Pop One', sans-serif;
 }
 
-
-/* .youthoob iframe{
-  border-radius: 10px;
-  width: 450px; 
-  height: 246px; 
-} */
-
-/* .youthoob p{
-  font-size: 20px;
-  font-style: italic;
-  font-weight: bold;
-} */
-
 .youthoob .yt_title{
   float: right;
   height: 330;
@@ -322,64 +334,6 @@ nav a:hover{
   min-width: 100%; /*so that img fit in it's parent box */
   min-height: 70%;
 }
-
-/*.yt_card_left{
-  height: 300px;
-  width: 520px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  background-color: #f44;
-  float: left;
-  border-radius: 15px;
-}
-
-.yt_card_right{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  padding: 20px;
-  background-color: #f44;
-  float: right;
-  border-radius: 15px;
-}
-
-.yt_card_text{
-  font-size: 20px;
-}*/
-
-/* .card-flex{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-} 
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  background-color: #f2f2f2;
-  transition: 0.4s;
-  text-align: center;
-  margin: 30px;
-  border-radius: 15px;
-}
-
-.card:hover {
-  box-shadow: 6px 10px 12px 0 rgba(0,0,0,0.2);
-}
-
-.container {
-  padding: 2px 16px;
-}
-
-.container>h4{
-  font-weight:bolder;
-  font-size: 25px;
-}
-
-.container>p{
-  font-size: 17px;
-} */
 
 .size1{
   font-size: 15px;
