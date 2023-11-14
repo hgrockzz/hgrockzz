@@ -56,9 +56,12 @@ function expandMenu(){
     document.getElementById('menu').style.display = 'none';
     document.getElementById('navBack').classList.remove('navBack');
     document.getElementById('navBack').classList.add('menu');
+    document.querySelector('nav').style.width = "fit-content";
+    document.querySelector('nav').style.right = "0";
 }
 
 function collapseMenu(){
+    document.querySelector('nav').style.width = "100%";
     document.getElementById('navBack').classList.remove('menu');
     document.getElementById('navBack').classList.add('navBack');
     document.getElementById('menu').style.display = 'block';
