@@ -70,21 +70,27 @@ nav .logo{
     transition: transform 200ms;
   }
   .front_bio img{
-    float: right;
     height: 300px;
     width: 270px;
-    padding-top: 100px;
+  }
+  .front-text{
+    width: 60%;
+  }
+  .front-img{
+    width: 40%;
+    text-align: center;
   }
   .front_bio{
-    background-color: #fff;
     overflow: hidden;
-    padding: 100px 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 100vh;
   }
   .front_bio .my_tagline{
-    float:left;
-    padding-top: 150px;
     font-size: 50px;
     user-select: none;
+    padding-left: 70px;
   }
 }
 
@@ -114,7 +120,6 @@ nav .logo{
     padding-top: 20px;
   }
   .front_bio{
-    background-color: #fff;
     overflow: hidden;
     padding: 100px 80px;
     height: 550px;
