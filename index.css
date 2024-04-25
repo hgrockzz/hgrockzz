@@ -45,6 +45,10 @@ nav .logo {
   display: none;
 }
 
+.hiCursor {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='45' height='54' viewport='0 0 100 100' style='fill:black;font-size:27px;'><text y='50%'>👋</text></svg>") 16 0, auto;
+}
+
 /* -- media queries -- */
 
 /* responsive nav for mobile/tab */
@@ -128,24 +132,25 @@ nav .logo {
   /* .alt-link{
     display: none;
   } */
-  .front_bio img {
-    float: right;
-    height: 300px;
-    width: 270px;
-    padding-top: 20px;
-  }
 
   .front_bio {
     overflow: hidden;
     padding: 100px 80px;
     height: 550px;
-  }
 
-  .front_bio .my_tagline {
-    float: left;
-    padding-top: 50px;
-    font-size: 40px;
-    user-select: none;
+    img {
+      float: right;
+      height: 300px;
+      width: 270px;
+      padding-top: 20px;
+    }
+
+    .my_tagline {
+      float: left;
+      padding-top: 50px;
+      font-size: 40px;
+      user-select: none;
+    }
   }
 }
 
