@@ -33,7 +33,7 @@ nav .logo {
 }
 
 .links-mobile {
-  margin: 50px 10px;
+  margin: 20vh 10px;
   display: flex;
   align-items: end;
   flex-direction: column;
@@ -43,6 +43,10 @@ nav .logo {
 
 .navBack {
   display: none;
+}
+
+#navBack {
+  margin: 20px 0 0 15px;
 }
 
 .hiCursor {
@@ -125,7 +129,7 @@ nav .logo {
     font-weight: bold;
     color: inherit;
     padding: 0 7px;
-    font-size: 17px;
+    font-size: 1.5rem;
     transition: transform 200ms;
   }
 
