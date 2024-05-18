@@ -567,6 +567,8 @@ footer img {
   border-radius: 12px;
   width: 100%;
   /*so that img fit in it's parent box */
+  aspect-ratio: 35 / 18;
+  object-fit: cover;
 }
 
 /* Eductation section ends */
