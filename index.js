@@ -87,3 +87,61 @@ function collapseMenu() {
     }, 300);
   }, 500); // Duration of animation (1000ms)
 }
+
+let currentTheme = "light";
+function darkMode() {
+  if (currentTheme == "light") {
+    //dark mode colors
+    currentTheme = "dark";
+    document.querySelector(".darkMode_btn").innerHTML =
+      '<i class="fa-solid fa-sun"></i>';
+    document.querySelector("body").style.backgroundColor = "#030637";
+    document.querySelector("body").style.color = "#fff";
+    document.querySelector(".typed_anim").style.textShadow =
+      "4px 3px 0px #000, 9px 8px 0px #ffffff26";
+    document.querySelectorAll(".title").forEach((title) => {
+      title.style.color = "#fff";
+    });
+    document.documentElement.style.setProperty("--boxShadow-hov-clr", "#fff2");
+    document.documentElement.style.setProperty("--color-hg-light1", "#910A67");
+    document.documentElement.style.setProperty("--color-hg-light2", "#720455");
+    document.documentElement.style.setProperty("--color-hg-dark2", "#3C0753");
+    document.documentElement.style.setProperty("--boxShadow-red", "#85005b");
+    document.querySelectorAll(".wrapper a").forEach((a) => {
+      a.style.color = "#fff";
+      a.style.borderColor = "#fff";
+    });
+
+    console.log("dark mode turned on");
+  } else {
+    //light mode colors
+    currentTheme = "light";
+    document.querySelector(".darkMode_btn").innerHTML =
+      '<i class="fa-solid fa-moon"></i>';
+    document.querySelector("body").style.cssText = "";
+    document.querySelector(".typed_anim").style.cssText = "";
+    document.querySelectorAll(".title").forEach((title) => {
+      title.style.cssText = "";
+    });
+    document.documentElement.style.setProperty("--boxShadow-hov-clr", "#0002");
+    document.documentElement.style.setProperty("--color-hg-light1", "#f00");
+    document.documentElement.style.setProperty("--color-hg-light2", "#ff4444");
+    document.documentElement.style.setProperty("--color-hg-dark2", "#eee");
+    document.documentElement.style.setProperty("--boxShadow-red", "#c77");
+    document.querySelectorAll(".wrapper a").forEach((a) => {
+      a.style.cssText = "";
+    });
+
+    console.log("light mode turned on");
+  }
+  updateColorsForJS();
+}
+
+function updateColorsForJS() {
+  var rightBar = document.getElementById("typedTxt-borderRight");
+  if (rightBar) {
+    rightBar.innerHTML = `.typewrite > .wrap { border-right: 0.08em solid ${
+      currentTheme === "dark" ? "#fff" : "#000"
+    }; }`;
+  }
+}
