@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorageTheme,
     systemDefaultThemeDark,
   });
-
   if (currentTheme === "dark") {
     applyDarkMode();
   } else {
@@ -28,12 +27,18 @@ function calculateTheme({ localStorageTheme, systemDefaultThemeDark }) {
 }
 
 function applyDarkMode() {
+  const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+  if (metaThemeColor) {
+    metaThemeColor.setAttribute("content", "#910A67");
+  }
   document.querySelector(".darkMode_btn").innerHTML =
     '<i class="fa-solid fa-sun"></i>';
   document.querySelector("body").style.backgroundColor = "#030637";
   document.querySelector("body").style.color = "#fff";
-  document.querySelector(".typed_anim").style.textShadow =
-    "4px 3px 0px #000, 9px 8px 0px #ffffff26";
+  if (document.querySelector(".typed_anim")) {
+    document.querySelector(".typed_anim").style.textShadow =
+      "4px 3px 0px #000, 9px 8px 0px #ffffff26";
+  }
   document.querySelectorAll(".title").forEach((title) => {
     title.style.color = "#fff";
   });
@@ -50,10 +55,16 @@ function applyDarkMode() {
 }
 
 function applyLightMode() {
+  const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+  if (metaThemeColor) {
+    metaThemeColor.setAttribute("content", "#f00");
+  }
   document.querySelector(".darkMode_btn").innerHTML =
     '<i class="fa-solid fa-moon"></i>';
   document.querySelector("body").style.cssText = "";
-  document.querySelector(".typed_anim").style.cssText = "";
+  if (document.querySelector(".typed_anim")) {
+    document.querySelector(".typed_anim").style.cssText = "";
+  }
   document.querySelectorAll(".title").forEach((title) => {
     title.style.cssText = "";
   });
@@ -73,15 +84,15 @@ function toggleTheme() {
     //dark mode colors
     applyDarkMode();
     const newTheme = "dark";
-    currentTheme = newTheme;
     localStorage.setItem("theme", newTheme);
+    currentTheme = newTheme;
     console.log("dark mode turned on");
   } else {
     //light mode colors
     applyLightMode();
     const newTheme = "light";
-    currentTheme = newTheme;
     localStorage.setItem("theme", newTheme);
+    currentTheme = newTheme;
     console.log("light mode turned on");
   }
 }
