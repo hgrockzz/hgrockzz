@@ -665,6 +665,7 @@ footer img {
 
 .tour_cards {
   background-color: var(--color-hg-dark2);
+  box-shadow: 0 4px 8px 0 var(--boxShadow-hov-clr, #0002);
   width: 350px;
   margin: 20px;
   padding: 2px;
@@ -683,8 +684,8 @@ footer img {
 
 @keyframes bgcolor_change {
   to {
-    background-color: #ff3d3d;
-    box-shadow: 2px 10px 16px 15px #eee;
+    background-color: var(--color-hg-light2);
+    box-shadow: 6px 10px 12px 0 var(--boxShadow-hov-clr, #0002);
   }
 }
 

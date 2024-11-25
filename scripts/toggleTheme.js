@@ -42,7 +42,7 @@ function applyDarkMode() {
   document.querySelectorAll(".title").forEach((title) => {
     title.style.color = "#fff";
   });
-  document.documentElement.style.setProperty("--boxShadow-hov-clr", "#fff2");
+  document.documentElement.style.setProperty("--boxShadow-hov-clr", "#4f013b");
   document.documentElement.style.setProperty("--color-hg-light1", "#910A67");
   document.documentElement.style.setProperty("--color-hg-light2", "#720455");
   document.documentElement.style.setProperty("--color-hg-dark2", "#3C0753");
